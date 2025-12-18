@@ -1,0 +1,212 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    background: linear-gradient(to bottom, #fff7fb, #e8fff5);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+body::before {
+    content: "❀ ❁ ✿ ❀ ❁ ✿";
+    position: fixed;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    color: rgba(255, 182, 193, 0.5);
+    animation: petals 12s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes petals {
+    0% { transform: translateY(-10%); }
+    100% { transform: translateY(120%); }
+}
+
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #b40086;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.vines {
+    width: 100%;
+    height: 40px;
+    background: repeating-linear-gradient(
+        45deg,
+        #7bb661 0px,
+        #7bb661 4px,
+        transparent 4px,
+        transparent 12px
+    );
+    margin-top: 10px;
+    opacity: 0.4;
+}
+
+
+.menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu a {
+    font-size: 28px;
+    color: #b40086;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px 25px;
+    border: 3px solid #ffb3e6;
+    border-radius: 12px;
+    background-color: rgba(255, 240, 250, 0.7);
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4fbf;
+    transform: scale(1.1);
+}
+
+
+#question {
+    font-size: 24px;
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+    background: rgba(255, 240, 250, 0.8);
+    border: 2px solid #ffb3e6;
+    border-radius: 12px;
+}
+
+
+.note {
+    width: 90px;
+    height: 90px;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ff8ac6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff5fb3;
+    transform: scale(1.08);
+}
+
+
+input {
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 2px solid #ffb3e6;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff5fb3;
+    box-shadow: 0 0 8px rgba(255, 120, 180, 0.5);
+}
+
+
+#timer {
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.time-warning {
+    color: #ff4f4f;
+}
+
+
+#feedback {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #b40086;
+}
+
+#score {
+    font-weight: bold;
+    color: #b40086;
+}
+
+
+footer {
+    margin-top: 80px;
+}
+
+.piano {
+    width: 100%;
+    height: 120px;
+    background: repeating-linear-gradient(
+        to right,
+        #000 0px,
+        #000 40px,
+        #fff 40px,
+        #fff 80px
+    );
+}
+
+
+.game-page {
+    font-size: 22px;   
+}
+
+.game-page h1 {
+    font-size: 48px;   
+    color: #b40086;    
+    margin-bottom: 20px;
+}
+
+.game-page #question {
+    font-size: 32px;   
+    margin: 20px auto;
+    padding: 15px;
+    width: 35%;
+    background: rgba(255, 240, 250, 0.8);
+    border: 1px solid #ffb3e6;
+    border-radius: 12px;
+}
+
+.game-page #feedback {
+    font-size: 26px;  
+    margin-top: 15px;
+    color: #b40086;
+}
+
+.game-page #timer {
+    font-size: 30px;   
+    font-weight: bold;
+}
+
+.game-page #score {
+    font-size: 28px;  
+    font-weight: bold;
+}
