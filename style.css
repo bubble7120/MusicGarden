@@ -265,3 +265,8 @@ footer {
     margin: 0 0 6px 0 !important;   
     line-height: 1.4;              
 }
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
