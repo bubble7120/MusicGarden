@@ -261,3 +261,7 @@ footer {
         font-size: 20px;
     }
 }
+.cindy-intro p {
+    margin: 0 0 8px 0;   /* 每段之間只留 8px */
+    line-height: 1.6;    /* 行距 */
+}
