@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy's Music Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cindy's Music Garden</h1>
+        <div class="vines"></div>
+    </header>
+
+    <nav class="menu">
+        <a onclick="redirectToPage('intro.html')">自我介紹</a>
+        <a onclick="redirectToPage('mission.html')">期許</a>
+        <a onclick="redirectToPage('performance.html')">表演</a>
+        <a onclick="redirectToPage('musicalgame.html')">音符加減遊戲</a>
+        
+    </nav>
+
+    <footer>
+        <div class="piano"></div>
+    </footer>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
